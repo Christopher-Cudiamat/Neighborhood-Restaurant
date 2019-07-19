@@ -1,0 +1,102 @@
+#nav {
+  // height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+
+  
+  & div {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-self: start;
+  }
+
+
+
+  & div #nav-logo {
+    width: 3.5rem;
+    height: 4.5rem;
+    margin: 1rem 0 0 1rem;
+  }
+
+  & div #nav-menu {
+    width: 3.5rem;
+    height: auto;
+    margin: 0 1rem 0 0;
+    align-self: center
+  }
+
+  & div h1 {
+    padding: 0 1rem 0 0;
+    font-size: 4rem;
+    font-weight: 300;
+    display: none;
+  }
+
+  .moveIn {
+    animation-name: moveIn;
+    animation-duration: .3s;
+		animation-timing-function: ease-in;
+  }
+
+  .moveOut {
+    animation-name: moveOut;
+    animation-duration: .3s;
+		animation-timing-function: ease-out;
+  }
+
+  .fadeWhite {
+    animation-name: fadeWhite;
+    animation-duration: .5s;
+    animation-timing-function: ease-in;
+    background: rgba(250,250,250, 0.9)
+  }
+
+  .fadeIn {
+    animation-name: fadeIn;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    transform: scaleY(1);
+    height: 100vh;
+  }
+
+  .fadeOut {
+    animation-name: fadeOut;
+    animation-duration: .2s;
+    animation-timing-function: ease-out;
+  }
+
+  .blur-all {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+  }
+
+  & ul {
+    transform: scale(0);
+    background: rgba(0 , 0, 0, .9);
+    text-transform: uppercase;
+    height: 0vh;
+    margin: 0 auto;
+    text-align: center;
+    transition: all .5s;
+  }
+  
+  & ul li {
+    padding: 2.3rem 0;
+  }
+
+  & ul li a {
+    color: $color-white;
+    font-size: 1.6rem;
+    margin: 5rem 0;
+  }
+}
+
+.navOverlay {
+  background: rgba(250 , 250, 250, .9);
+}

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src=../scripts/script.js></script>
+  <script src=../scripts/index.js></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+
+  <title>Document</title>
+</head>
+<body id="home">
+  <!-- NAV START -->
+  <i class="fas fa-caret-up"></i>
+  <nav id="nav">
+    <div>
+        <img src="../assets/img/logo-big.png" alt="restaurant logo" id="nav-logo">
+        <img src="../assets/img/hamburger_menu.png" alt="restaurant navigation" id="nav-menu" class="burger-menu">
+        <h1 class="burger-menu">X</h1>
+    </div>
+    <ul>
+      <li><a href="#showcase">home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#reservation">Reservation</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+  <!-- NAV END -->
+
+  <!-- SHOWCASE START -->
+  <section id="showcase">
+    <div>
+      <img src="../assets/img/logo-big.png" alt="restaurant logo">
+      <h1>NEIGHBORHOOD</h1>
+      <h5>FILIPINO AND ORIENTAL CUISINE</h5>
+      <button class="explore">EXPLORE</button>
+    </div>
+    
+    <video  id="myVideo" autoplay muted> 
+      <source src="../assets/video/vid4.mp4" type="video/mp4">
+      Your browser does not support HTML5
+    </video>
+    <div id="openHours">
+      <h3>Open Hours</h3>
+      <ul>
+        <li>MON.........CLOSE</li>
+        <li>TUE-WED-FRI-SAT.....10:00-20:30</li>
+        <li>THU-SUN.....10:00-20:30</li>
+      </ul>
+    </div>
+    <div class="bg">
+      <!-- <p>fdasf</p> -->
+    </div>
+  </section>
+  <!-- autoplay muted loop -->
+  <!-- SHOWCASE END -->
+
+  <!-- ABOUT START -->
+  <section id="about">
+    <div class="title-style">
+      <h4>About Us</h4>
+      <h2>Pinoy Kitchen</h2>
+    </div>
+    <div>
+      <img src="../assets/img/sss.jpg" alt="chef pic">
+      <img src="../assets/img/img_about-2.png" alt="food pic">
+      <img src="../assets/img/img_about-3.png" alt="food pic">
+    </div>
+    <article class="container">
+        <h3>We serve only the best and authentic Kapangpangan and Filipino dishes</h3>
+        <p>Most Filipino food and dishes are a delectable blend of native and foreign cuisines that have evolved through the centuries. Historians narrate that a couple of hundred years ago, foreign traders and settlers, colonizers and missionaries brought with them their native recipes and unique style of cooking to the Philippines. </p>  
+    </article>
+    <div>
+      <img src="../assets/icons/about-icon_1.svg" alt="icon 1" class="icons">
+      <p>Authentic Menu</p>
+      <img src="../assets/icons/about-icon_2.svg" alt="icon 1" class="icons">
+      <p>Fresh Dishes</p>
+      <img src="../assets/icons/about-icon_3.svg" alt="icon 1" class="icons">
+      <p>Quality Drinks</p>
+    </div>
+  </section> 
+  <!-- ABOUT END -->
+
+  <!-- RESERVATIONS START -->
+  <section id="reservation">
+    <div class="title-style">
+      <h4>Reservation</h4>
+      <h2>CALL US NOW</h2>
+      <p>300-2234-1039</p>
+    </div>
+    <div class="events">
+      <form action="" id="iscrizione" class="container">
+        <ul>
+          <li>
+            <label for="nome"><i class="fas fa-signature fa"><span></span></i></label>
+            <!-- <i class="fas fa-phone fa"><span></span></i> -->
+            <input type="text" placeholder="Scrivi il tuo nome" name="nome" id="nome" data-label="Nome">
+            <span class="focus-bg"></span>
+            <!-- <span class="errore">Nome Obligatorio</span> -->
+          </li>
+          <li>
+            <label for="numero"><i class="fas fa-phone fa"><span></span></i></label>
+            <!-- <i class="fas fa-phone fa"><span></span></i> -->
+            <input type="number" placeholder="Scrivi il tuo numero" name="numero" id="numero" data-label="Numero">
+          </li>
+
+          <li>
+            <i class="fas fa-user fa"><span></span></i>
+            <select  type="select" name="persone" id="persone" data-label="Numero di Persone">
+              <option selected value = "0">Quanti persone</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">Piu persone</option>
+            </select>
+          </li>
+
+          <li>
+            <i class="fas fa-calendar-alt fa"><span></span></i>
+            <input type="text" placeholder="Scrivi Quando" name="calendario" id="calendario" 
+           data-label="La data e">
+          </li>
+
+          <li>
+            <i class="far fa-clock fa"><span></span></i>
+            <select type="select" name="orario" id="orario" data-label="L'orario e">
+              <option selected value="0">Orario</option>
+              <option value="1">10am - 12am</option>
+              <option value="2">12am - 3pm</option>
+              <option value="3">5pm - 7pm</option>
+              <option value="4">7pm - 10pm</option>
+            </select>
+          </li>
+        </ul>
+
+        <button type="submit" class="submit">CERCA TAVOLA</button>
+      </form>
+    <!-- <div class="events"> -->
+      <!-- <img src="../samp.jpg" alt=""> -->
+      <ul  class="container">
+        <h2>We accept event reservations</h2>
+        <li>- Weddings Reception</li>
+        <li>- Baptism Reception</li>
+        <li>- Birthdays Celebration</li>
+        <li>- Work Events</li>
+        <li>- Community Events</li>
+      </ul>
+    </div>
+  </section>
+  <!-- RESERVATIONS END -->
+
+  <!-- MENU START -->
+  <section id="menu">
+    <div class="title-style">
+      <h4>Our Menu</h4>
+      <h2>Eat All You Can</h2>
+      <p>(Drinks not included)</p>
+    </div>
+    <div class="container">
+      <div id="buffetA" class="menu">
+        <h3>Buffet A</h3>
+        <img src="../assets/img/menu_a.png" alt="">
+        <h4>11.00 Euro / persone</h4>
+        <p>See Menu</p>
+        <i class="down"></i>
+        <ul>
+          <li>3 Main Dishes</li>
+          <li>1 Side Dish</li>
+          <li>1 Vegetable Salad</li>
+          <li>1 Fruit Salad</li>
+        </ul>
+      </div>
+
+      <div id="buffetB" class="menu">
+        <h3>Buffet B</h3>
+        <img src="../assets/img/menu_b.png" alt="">
+        <h4>13.00 Euro / persone</h4>
+        <p>View Menu</p>
+        <i class="down"></i>
+        <ul>
+          <li>3 Main Dishes</li>
+          <li>1 Side Dish</li>
+          <li>1 Vegetable Salad</li>
+          <li>1 Fruit Salad</li>
+        </ul>
+      </div>
+
+      <div id="buffetC" class="menu">
+        <h3>Buffet C</h3>
+        <img src="../assets/img/buffet-a.png" alt="">
+        <h4>16.00 Euro / persone</h4>
+        <p>View Menu</p>
+        <i class="down"></i>
+        <ul>
+          <li>3 Main Dishes</li>
+          <li>1 Side Dish</li>
+          <li>1 Vegetable Salad</li>
+          <li>1 Fruit Salad</li>
+        </ul>
+      </div>
+
+      
+      <div id="drinks" class="menu">
+        <h3>Drinks</h3>
+        <img src="../assets/img/drinks.png" alt="">
+        <h4>Wate / Soda / Beer / Juices</h4>
+        <p>View All Drinks</p>
+        <i class="down"></i>
+        <ul>
+          <li>3 Main Dishes</li>
+          <li>1 Side Dish</li>
+          <li>1 Vegetable Salad</li>
+          <li>1 Fruit Salad</li>
+        </ul>
+      </div> 
+
+    </div>
+  </section>
+  <!-- MENU END -->
+
+  <!-- GALLERY START -->
+  <section id="gallery">
+      <div class="title-style">
+        <h4>Our Gallery</h4>
+        <h2>Our Specialties</h2>
+      </div>
+      <div class="gallery-images">
+        <div>
+          <img src="../assets/img/image_gallery-1.jpg" alt="">
+          <i class="fas fa-search-plus"></i>
+          <p class="pic-des-1">PORK SISIG</p>
+        </div>
+        <div>
+          <img src="../assets/img/image_gallery-2.jpg" alt="">
+          <i class="fas fa-search-plus"></i>
+          <p class="pic-des-2">CHICKEN ADOBO</p>
+        </div>
+        <div>
+          <img src="../assets/img/image_gallery-3.jpg" alt="">
+          <i class="fas fa-search-plus"></i>
+          <p class="pic-des-1">ICE CREAM HALO-HALO</p>
+        </div>
+        <div>
+          <img src="../assets/img/image_gallery-4.jpg" alt="">
+          <i class="fas fa-search-plus"></i>
+          <p class="pic-des-2">BOODLE FIGHT</p>
+        </div>
+        <div>
+          <img src="../assets/img/image_gallery-5.jpg" alt="">
+          <i class="fas fa-search-plus"></i>
+          <p class="pic-des-1">GREEN MANGO SHAKE</p>
+        </div>
+        
+      </div>
+  </section>
+  <!-- GALLERY END -->
+
+  <!-- TESTIOMONIALS START -->
+  <section id="testimonials">
+    <div class="title-style">
+      <h4>Our Testimonials</h4>
+      <h2>With a Smile</h2>
+    </div>
+    <div class="quote"></div>
+    <i class="fas fa-angle-left prev"></i>
+    <i class="fas fa-angle-right next"></i>
+    <ul class="container">
+      <li class="test-attivo">
+        <blockquote>
+            We’re on an honeymoon in Venice & we came to visit a family in Rome. & Ofcourse we want t have Filipino food. The food here is excellent, My Norwegian Husband likes asian foods, so he suit his self eating sinigang na baboy, kari kari, beef caldereta, chicken bbq & sisig. Very accomodating, good & spacious place. We were all so full when we came outvthe restaurant.
+          <cite>
+              Angelique Hernandez
+          </cite>
+        </footer>
+        </blockquote>
+        <img src="../assets/img/image_testi-1.png" alt="testimonial person">
+      </li>
+
+      <li>
+        <blockquote>
+          I would fly back to Rome from Switzerland if only to eat at The Neighborhood, and satisfy my cravings for Filipino food. They're famous for crispy pata, but I think you should also try my favorites there: binagoongan, sisig, longganisa, and sinigang! Feels like home.
+        <footer>
+          <cite>
+              Rejik Cauntay
+          </cite>
+        </footer>
+        </blockquote>
+        <img src="../assets/img/image_testi-1.png" alt="testimonial person">
+      </li>
+
+      <li>
+        <blockquote>
+            I have actually visited this restaurant probably 2 years ago and I cant stressed it enough how amazing the food was and the hospitality was great. It kinda teleported me back home cause I am kapampangan as well but residing in the UK now so very homesick. I would definitely comeback to this restaurant when I get to visit Rome again.
+        <footer>
+          <cite>
+              Karl Peralta
+          </cite>
+        </footer>
+        </blockquote>
+        <img src="../assets/img/image_testi-1.png" alt="testimonial person">
+      </li>
+    </ul>
+    
+    <!-- <div class="images-testi">
+      <img src="../assets/img/image_testi-1.png" alt="testimonial person">
+      <img src="../assets/img/image_testi-1.png" alt="testimonial person">
+      <img src="../assets/img/image_testi-1.png" alt="testimonial person">
+    </div> -->
+  </section>
+  <!-- TESTIMONIAL END -->
+
+  <!-- CONTACTS START -->
+  <section id="contact">
+    <div class="title-style">
+      <h4>Contact Us</h4>
+      <h2>Get IN TOUCH</h2>
+    </div>
+    <div class="container">
+      <ul>
+        <li>
+          <img src="../assets/img/logo-small-white.png" alt="contact-logo">
+          <h2>Neighborhood</h2>
+        </li>
+        <li>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-google-plus-square"></i>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <p><i class="fas fa-phone fa"><span></span></i>345-24345-1121</p>
+        </li>
+        <li>
+          <p><i class="fas fa-envelope"><span></span></i>neighborhood@gmail.com</p>
+        </li>
+        <li>
+          <p><i class="fas fa-map-marked"><span></span></i>Via Germanica 123 Rome, Italy</p>
+        </li>
+      </ul>
+    </div>
+    <img src="../assets/img/map.jpg" alt="contact-logo" class="map">
+    <a href="#">Vedi su Google Map</a>
+  </section>
+  <!-- CONTACTS END -->
+
+  <!-- Footer STARTS-->
+  <footer> 
+    <p>&COPY;NEIGHBORHOOD restaurant</p>
+  </footer>
+  <!-- Footer ENDS-->
+</body>
+</html>

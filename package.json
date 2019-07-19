@@ -1,0 +1,28 @@
+{
+  "name": "neighborhood_restaurant",
+  "version": "1.0.0",
+  "description": "restaurant website",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css",
+    "build:jquery": "cp node_modules/jquery/dist/jquery.js scripts/script.js"
+  },
+  "author": "Christopher Cudiamat",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.4.9",
+    "node-sass": "^4.11.0",
+    "postcss-cli": "^6.1.2"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "jsdom": "^13.2.0"
+  }
+}

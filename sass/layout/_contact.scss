@@ -1,0 +1,55 @@
+#contact {
+  position: relative;
+  z-index: 100;
+  padding: 5rem 0 0 0;
+  background: #111;
+
+  & h2 {
+    color: $color-white;
+  }
+
+  & ul {
+    text-align: left;
+  }
+
+  & ul img {
+    display: block;
+  }
+
+  & ul h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    border-bottom: solid 1px white;
+    display: inline-block;
+  }
+
+  & ul .fab {
+    font-size:4rem;
+    margin-right: 2rem;
+  }
+
+  & ul li {
+    color: $color-white;
+    padding-top: 3rem;
+  }
+  & ul span {
+    margin: .5rem;
+  }
+
+  & .map {
+    width: 100%;
+    display: block;
+    padding-top: 2rem;
+  }
+
+  & a{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // background: $color-primary;
+    background: linear-gradient(to bottom, #ec8121 0%,#f17432 50%,#ea5507 100%,#fb955e 100%);
+    color: $color-white;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+  }
+}

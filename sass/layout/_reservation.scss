@@ -1,0 +1,159 @@
+
+#reservation {
+  position: relative;
+  z-index: 100;
+  padding: 5rem 0 0 0;
+  background: #111;
+
+  & h2 {
+    color: $color-white;
+    padding: 0;
+  }
+
+  & p {
+    padding: 0 0 2rem 0;
+    color: $color-white;
+  }
+
+  // & form {
+  //   background: #111;
+  // }
+  & form li {
+    padding: 3rem 0 1.5rem 0;
+    // background: greenyellow;
+    position: relative;
+  }
+
+  & form li:first-child {
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  & form input,
+  & form select {
+    width: 100%;
+    padding: 1.5rem 1.5rem 1.5rem 5rem;
+    border-radius: 10px;
+    outline:none;
+    border: none;
+    font-size: 16px;
+    color: #222;
+    background: rgba($color-white, 0.9);
+    border-bottom: solid 1px $color-white;
+    
+  }
+
+  & form #calendario,
+  & form select,
+  & form input::placeholder {
+    color: rgba($color-black, 0.9);
+  }
+
+  // & form #calendario {
+  //   position: relative;
+  // }
+
+  .fa{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 15px;
+    display: inline-block;
+    color: $color-black;
+  }
+
+
+  // & label {
+  //   text-align: left;
+  // }
+
+  & form li span:first-child {
+    border-right: solid 1px $color-black;
+    margin-left: 1rem;
+  }
+
+  & form li .errore {
+    background: rgba(236, 100, 75, 1);
+    padding: 1rem 2rem 1rem 1rem;
+    font-size: 1.4rem;
+    position: absolute;
+    left: 0;
+    top: 85%;
+    border-radius: 5px;
+    display: none;
+    color: $color-white;
+  }
+
+  .errore:after, .errore:before {
+    bottom: 99%;
+    left: 7%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  
+  .errore:after {
+    border-width: 2px;
+  }
+  .errore:before {
+    border-bottom-color:  rgba(236, 100, 75, 1);
+    border-width: 10px;
+  }
+
+  & .err {
+    border: solid  rgba(236, 100, 75, 1) 2px;
+  }
+
+  & form button {
+    color: $color-white;
+    background: $color-primary-gradient;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    font-size: 1.6rem;
+    width: 50%;
+    margin: 4rem auto 6rem auto;
+  }
+
+  & .events{
+    background: url(../assets/img/samp.jpg) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 3rem 0;
+    text-align: center;
+    color: $color-white;
+    
+    & h2 {
+      padding-bottom: 2rem;
+      font-family: 'Julius Sans One', sans-serif;
+    }
+
+    & .openHours {
+      background: rgba($color-black, 0.5);
+      padding: 2rem 0;
+    }
+
+    & ul:last-child {
+      background: rgba($color-black, 0.8);
+      padding: 4rem 0 4rem 0;
+      // border: solid 1px rgba($color-white, 0.2);
+    }
+
+    & ul:last-child  li{
+      padding: 1rem 0 1rem 0;
+    }
+
+    & .events ul li {
+      font-family: 'Julius Sans One', sans-serif;
+      color: $color-white;
+      margin: 1.5rem 0; 
+      font-size: 6rem;  
+      border: solid $color-white 1px;
+    }
+  }
+
+}
+
+
